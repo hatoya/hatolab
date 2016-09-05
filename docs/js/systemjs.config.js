@@ -15,6 +15,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       'rxjs': 'npm:rxjs',
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+      'p5': 'npm:p5/lib/p5.js'
     },
     packages: {
       app: {

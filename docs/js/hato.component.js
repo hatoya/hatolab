@@ -9,15 +9,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var p5 = require('p5');
 var HatoComponent = (function () {
-    function HatoComponent() {
+    function HatoComponent(elRef) {
+        this.element = elRef.nativeElement;
     }
+    HatoComponent.prototype.ngOnInit = function (elRef) {
+        var app = new p5(this.sketch, this.element);
+    };
+    HatoComponent.prototype.sketch = function (p) {
+        p.setup = function () {
+            p.createCanvas(window.innerWidth, window.innerHeight);
+            p.background(0);
+        };
+        p.draw = function () {
+            if (p.mouseIsPressed) {
+                p.fill(0);
+            }
+            else {
+                p.fill(255);
+            }
+            p.ellipse(p.mouseX, p.mouseY, 80, 80);
+        };
+    };
     HatoComponent = __decorate([
         core_1.Component({
             selector: 'hato-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            template: ''
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [core_1.ElementRef])
     ], HatoComponent);
     return HatoComponent;
 }());
