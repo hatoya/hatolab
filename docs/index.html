@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>HATO LAB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/application.css">
+    <script src="https://npmcdn.com/angular2/bundles/angular2-polyfills.min.js"></script>
+    <script src="https://npmcdn.com/systemjs/dist/system.js"></script>
+    <script src="https://npmcdn.com/typescript/lib/typescript.js"></script>
+    <script src="https://npmcdn.com/rxjs/bundles/Rx.umd.js"></script>
+    <script src="https://npmcdn.com/angular2/bundles/angular2.js"></script>
+    <script src="https://npmcdn.com/angular2/bundles/router.min.js"></script>
+    <script src="https://npmcdn.com/angular2/bundles/http.min.js"></script>
+    <script src="./js/systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err) {
+            console.error(err);
+        });
+    </script>
+</head>
+<body>
+    <hato-app></hato-app>
+</body>
+</html>

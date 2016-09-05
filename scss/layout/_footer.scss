@@ -1,0 +1,51 @@
+.l-footer {
+    padding: 40px 0 0 0;
+    color: white;
+    background: $brandColor;
+    &__area {
+        display: flex;
+        flex-wrap: wrap;
+        width: 880px;
+        margin: 0 auto;
+        &__country {
+            width: calc(100% / 5);
+            margin-bottom: 20px;
+            &__list {
+                font-size: 13px;
+                margin-bottom: 5px;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    margin-right: 3px;
+                    border-top: 4px solid rgba(black, 0);
+                    border-right: 4px solid rgba(black, 0);
+                    border-bottom: 4px solid rgba(black, 0);
+                    border-left: 4px solid white;
+                }
+                &:first-child {
+                    margin-bottom: 8px;
+                    font-size: 15px;
+                    &::before {
+                        display: none;
+                    }
+                }
+                a {
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &__copyright {
+        margin-top: 10px;
+        &__paragraph {
+            text-align: center;
+            font-size: 12px;
+            line-height: 2;
+        }
+    }
+}

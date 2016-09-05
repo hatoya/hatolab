@@ -1,0 +1,10 @@
+.l-column-full {
+    padding: 50px 0;
+    &.suggest {
+        padding: 150px 0;
+        background: #eeeeee;
+    }
+    &.other {
+        padding: 0;
+    }
+}
