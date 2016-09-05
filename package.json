@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp copy"
+    "build": "gulp build"
   },
   "author": "",
   "license": "ISC"
