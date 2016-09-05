@@ -21,15 +21,13 @@ var HatoComponent = (function () {
         p.setup = function () {
             p.createCanvas(window.innerWidth, window.innerHeight);
             p.background(0);
+            p.noStroke();
         };
         p.draw = function () {
-            if (p.mouseIsPressed) {
-                p.fill(0);
-            }
-            else {
-                p.fill(255);
-            }
-            p.ellipse(p.mouseX, p.mouseY, 80, 80);
+            p.fill(255);
+            p.line(255);
+            p.ellipse(p.mouseX, p.mouseY, 5, 5);
+            p.background(0, 10);
         };
     };
     HatoComponent = __decorate([
