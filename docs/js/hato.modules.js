@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var hato_component_1 = require('./hato.component');
+var circle_1 = require('./sketch/circle');
 var HatoModule = (function () {
     function HatoModule() {
     }
@@ -18,7 +19,8 @@ var HatoModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
             declarations: [hato_component_1.HatoComponent],
-            bootstrap: [hato_component_1.HatoComponent]
+            bootstrap: [hato_component_1.HatoComponent],
+            providers: [circle_1.Circle]
         }), 
         __metadata('design:paramtypes', [])
     ], HatoModule);
