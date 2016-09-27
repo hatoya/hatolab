@@ -5,7 +5,7 @@ let p5 = require('p5')
 
 @Component({
     selector: 'hato-app',
-    templateUrl: '../html/index.html'
+    template: '<div class="c-logo"><img src="./img/logo.png" alt="HATO LAB" class="c-logo__logo"></div>'
 })
 export class HatoComponent {
     private element: any
