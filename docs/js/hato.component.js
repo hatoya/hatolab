@@ -48,7 +48,7 @@ var HatoComponent = (function () {
     HatoComponent = __decorate([
         core_1.Component({
             selector: 'hato-app',
-            templateUrl: '/html/index.html'
+            templateUrl: '../html/index.html'
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef, circle_1.Circle])
     ], HatoComponent);
